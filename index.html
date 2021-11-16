@@ -17,7 +17,17 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.scss" />
 </head>
+    <style>
+.custom {
+  /* The second value here is a fallback. */
+  cursor: url(./assets/custom.png), auto;
 
+  /* You may need coordinates to adjust the pointer
+     for example, the custom cursor is circular and you want
+     the middle to be where you click */
+  cursor: url(./assets/custom.png) 15 15, move;
+}
+        </style>
 <body>
     <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -28,6 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
                     <li>
                         <a class="page-scroll" href=""><h4>SOLSTAINS</h4></a>
                     </li>
@@ -72,6 +83,20 @@
                     img {
                         border: solid 0px rgb(255, 208, 0);
                     }
+                    @media (max-width: 480px) {
+  #picblock {
+    background-image: url(./assets/backgroung_1.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+  }
+}
+@media (min-width: 481px) {
+  #picblock {
+    background-image: url(./assets/backgroung_1.png);
+    background-repeat: no-repeat;
+    background-size: contain ;
+  }
+}
                 </style>
                 </head>
 
@@ -87,7 +112,7 @@
 </div>
 <div class="media wow fadeInRight"></div>
 <h3>Welcome to The Solstain Gang,</h3>
-<a href="https://www.youtube.com/watch?v=pwBFOuCrdr4" class="btn btn-default btn-xl page-link">MINT</a>
+<a href="https://mint.solstains.xyz" class="btn btn-default btn-xl page-link">MINT</a>
 
     </div>
     </div>
